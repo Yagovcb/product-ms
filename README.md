@@ -3,32 +3,34 @@
 <p align="center">O codigo contido nesse repositorio permite a criação, pesquisa, alteração e deleção de um Produto </p>
 
 
-####Para ter acesso a execução da API, após rodar o sistema cole no url do seu navegador o codigo abaixo após o
+<h4>Para ter acesso a execução da API, após rodar o sistema cole no url do seu navegador o codigo abaixo</h4>
 
 <code>
 http://localhost:9999/api/products/
 </code>
 
-####Essa API conta com um banco H2 em memoria previamente configurado. Pra te ajudar a ter acesso rapido a esse banco, cola o URL abaixo no navehador
+<h4>Essa API conta com um banco H2 em memoria previamente configurado. 
+Pra te ajudar a ter acesso rapido a esse banco, cola o URL abaixo no navehador</h4>
 
 <code>
 http://localhost:9999/api/h2-console/test.do?jsessionid=7c63467e0ce16b078c5be5542889dcf6
 </code>
 
-####Antes de permitir o acesso, vai ser necessario entrar com usuario e senha, que estão abaixo
+<h4>Antes de permitir o acesso, vai ser necessario entrar com usuario e senha, que estão abaixo</h4>
 
 <code>
 - Usuario: admin <br>
 - Senha: root123
 </code>
 
-####Também temos a configuração do Swagger, para facilitar o entendimento dos endpoint
+<h4>Também temos a configuração do Swagger, para facilitar o entendimento dos endpoint</h4>
 
 <code>
 http://localhost:9999/api/swagger-ui/
 </code>
 
-####Por fim, mas não menos importante, temos testes unitarios e teste de integração nesse projeto. e abaixo mostrarei a porcentagem de cobertura de cada um deles
+<h4>Por fim, mas não menos importante, temos testes unitarios e teste de integração nesse projeto. 
+E abaixo mostrarei a porcentagem de cobertura de cada um deles</h4>
 <details>
   <summary><b><samp>📈Testes de Integração e Teste Unitario</samp></b></summary>
 <br>
@@ -47,7 +49,7 @@ http://localhost:9999/api/swagger-ui/
   ![Resultado Teste Unitario](src/main/resources/static/ResultadoTesteUnitario.png?style=flat-square)
 
 
-##### <p align="justify">Infelizmente andei praticando pouco a construção de testes e não pude alcançar 100% em ambos. Mas conto com a ajuda de vocês para me ajudar a chegar lá!<p>
+<h4># <p align="justify">Infelizmente andei praticando pouco a construção de testes e não pude alcançar 100% em ambos. Mas conto com a ajuda de vocês para me ajudar a chegar lá!<p></h4>
 </details>
 
 ##
