@@ -3,35 +3,37 @@
 <p align="center">O codigo contido nesse repositorio permite a criação, pesquisa, alteração e deleção de um Produto </p>
 
 
-####<p align="justify">Para ter acesso a execução da API, após rodar o sistema cole no url do seu navegador o codigo abaixo após o </p>
+####Para ter acesso a execução da API, após rodar o sistema cole no url do seu navegador o codigo abaixo após o
 
 <code>
 http://localhost:9999/api/products/
 </code>
 
-####<p align="justify"> Essa API conta com um banco H2 em memoria previamente configurado. Pra te ajudar a ter acesso rapido a esse banco, cola o URL abaixo no navehador </p>
+####Essa API conta com um banco H2 em memoria previamente configurado. Pra te ajudar a ter acesso rapido a esse banco, cola o URL abaixo no navehador
 
 <code>
 http://localhost:9999/api/h2-console/test.do?jsessionid=7c63467e0ce16b078c5be5542889dcf6
 </code>
 
-####<p align="justify"> Antes de permitir o acesso, vai ser necessario entrar com usuario e senha, que estão abaixo </p>
+####Antes de permitir o acesso, vai ser necessario entrar com usuario e senha, que estão abaixo
 
 <code>
 - Usuario: admin <br>
 - Senha: root123
 </code>
 
-####<p align="justify"> Também temos a configuração do Swagger, para facilitar o entendimento dos endpoint </p>
+####Também temos a configuração do Swagger, para facilitar o entendimento dos endpoint
 
 <code>
 http://localhost:9999/api/swagger-ui/
 </code>
 
-####<p align="justify">Por fim, mas não menos importante, temos testes unitarios e teste de integração nesse projeto. e abaixo mostrarei a porcentagem de cobertura de cada um deles</p>
+####Por fim, mas não menos importante, temos testes unitarios e teste de integração nesse projeto. e abaixo mostrarei a porcentagem de cobertura de cada um deles
 <details>
   <summary><b><samp>📈Testes de Integração e Teste Unitario</samp></b></summary>
 <br>
+
+##
 - Teste de Integração
   
 
