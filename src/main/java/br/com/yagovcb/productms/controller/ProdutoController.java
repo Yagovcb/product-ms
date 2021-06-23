@@ -3,6 +3,7 @@ package br.com.yagovcb.productms.controller;
 import br.com.yagovcb.productms.model.Produto;
 import br.com.yagovcb.productms.service.ProdutoService;
 import br.com.yagovcb.productms.service.dto.DetalheRespostaDTO;
+import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.data.domain.Pageable;
 import br.com.yagovcb.productms.service.dto.ProdutoDTO;
@@ -36,6 +37,7 @@ public class ProdutoController {
      * @param produtoDTO passado no corpo da requisição
      * @return the {@link ResponseEntity} com o status {@code 201 (CREATED)} e a entidade {@link Produto} criada
      * */
+    @ApiOperation(value = "Endpoint de criação de um produto")
     @PostMapping(path = ProdutoUri.CRIAR_PRODUTO, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Produto> createProduto(@RequestBody ProdutoDTO produtoDTO) {
         log.info( "ProdutosController: Criando novo produto" + produtoDTO );
@@ -49,6 +51,7 @@ public class ProdutoController {
      * @param produtoId passado no URL da requisição
      * @return the {@link ResponseEntity} com o status {@code 200 (OK)} e a entidade {@link Produto} criada
      * */
+    @ApiOperation(value = "Endpoint de atualização de um produto. Passando o id no path e os valores que serão atualizados na forma da entidade ProdutoDTO")
     @PutMapping(path = ProdutoUri.ATUALIZAR_PRODUTO + "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Produto> atualizaProdutoPorId(@PathVariable("id") String produtoId, @RequestBody ProdutoDTO produtoDTO){
         log.info( "ProdutosController: Atualizando o produto de id - " + produtoId );
@@ -60,6 +63,7 @@ public class ProdutoController {
      * @param produtoId passado no URL da requisição
      * @return the {@link ResponseEntity} com o status {@code 200 (OK)} e a entidade {@link Produto} criada
      * */
+    @ApiOperation(value = "Endpoint de busca de um produto dado seu ID")
     @GetMapping(path = ProdutoUri.BUSCA_POR_ID + "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Produto> getProdutoPorID(@PathVariable("id") String produtoId) {
         log.info("ProdutosController: Buscando produto do ID - " + produtoId + "...");
@@ -71,6 +75,7 @@ public class ProdutoController {
      * @param pageable paginação informada
      * @return the {@link ResponseEntity} com o status {@code 200 (OK)}} e a entidade {@link List<Produto>} criada
      * */
+    @ApiOperation(value = "Endpoint de busca de todos os produtos cadastrados")
     @GetMapping(path = ProdutoUri.LISTAR_TODOS, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Produto>> getProdutos(@ApiParam Pageable pageable) {
         log.info("Retornando todos os Produtos Cadastrados");
@@ -86,6 +91,7 @@ public class ProdutoController {
      *
      * @return the {@link ResponseEntity} com o status {@code 200 (OK)}} e a entidade {@link List<Produto>} criada
      * */
+    @ApiOperation(value = "Endpoint de busca de todos os produtos cadastrados. Dado um filtro passado via QueryParam")
     @Transactional
     @GetMapping(path = ProdutoUri.LISTAR_POR_FILTRO, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Produto>> getProdutoPorFiltro(@RequestParam(name = "q", required = false) String q,
@@ -100,6 +106,7 @@ public class ProdutoController {
      * @param produtoId passado no URL da requisição
      * @return the {@link ResponseEntity} com o status {@code 201 (OK)} e a entidade {@link DetalheRespostaDTO} criada
      * */
+    @ApiOperation(value = "Endpoint de deleção de um produto dado seu id")
     @DeleteMapping(path = ProdutoUri.DELETA_PRODUTO + "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<DetalheRespostaDTO> deleteProduto(@PathVariable("id") String produtoId){
         log.info("ProdutosController: Buscando produto do ID - " + produtoId + "...");
