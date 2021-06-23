@@ -52,10 +52,9 @@ E abaixo mostrarei a porcentagem de cobertura de cada um deles</h4>
 <h4><p align="justify">Infelizmente andei praticando pouco a construção de testes e não pude alcançar 100% em ambos. Mas conto com a ajuda de vocês para me ajudar a chegar lá!<p></h4>
 </details>
 
+##
 
 <p><h3 align="center"><samp> Principais tecnologias utilizadas</samp></h3></p>
-
-##
 
 - Linguagem utilizada </br>
   ![Java](https://img.shields.io/badge/Java-ea2d2f?style=flat-square&logo=java&logoColor=ffffff)
