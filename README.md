@@ -55,6 +55,7 @@ E abaixo mostrarei a porcentagem de cobertura de cada um deles</h4>
 
 <p><h3 align="center"><samp> Principais tecnologias utilizadas</samp></h3></p>
 
+##
 
 - Linguagem utilizada </br>
   ![Java](https://img.shields.io/badge/Java-ea2d2f?style=flat-square&logo=java&logoColor=ffffff)
@@ -66,6 +67,7 @@ E abaixo mostrarei a porcentagem de cobertura de cada um deles</h4>
   ![ModelMapper](https://img.shields.io/badge/ModelMapper-3333CC?style=flat-modelMapper&logo=modelMapper&logoColor=ffffff)
   ![Lombok](https://img.shields.io/badge/Lombok-663300?style=flat-square&logo=lombok&logoColor=ffffff)
 
+##
 
 <p><samp>OBS.: Caros amigos, sintam-se a vontade para criar PR's com melhorias ou acrescimos para esse Projeto. Abaixo estão outras formas de entrar em contato comigo!</samp></p>
 
